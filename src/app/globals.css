@@ -1,27 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Hide scrollbars but keep the scroll functionality */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow: auto; /* Allow scrolling */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Hide scrollbar in WebKit browsers */
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+body {
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  background-image: url("/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero {
+  background-image: url("/images/Default.png");
+  background-size: 140% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+@font-face {
+  font-family: 'Marykate';
+  src: url('./fonts/MaryKate.woff') format('woff2'),
+       url('/fonts/Marykate.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
