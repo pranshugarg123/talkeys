@@ -63,7 +63,7 @@ const Navbar = () => {
               ))}
               
                 <Button asChild variant="outline" className="text-white">
-                <Link href="/enter">
+                <Link href="/">
                   Sign Up/Login
                   </Link>
                 </Button>
