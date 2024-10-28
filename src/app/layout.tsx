@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
-  import image from "../public/images/background.png";
+import image from "../public/images/background.png";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,19 +29,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-     <body
-  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-  style={{
-    backgroundImage: `url(${image.src})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-  }}
->
-  {children}
-</body>
 
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          backgroundImage: `url(${image.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      >
+          <Navbar />
+          {children}
+          <Footer />
+      </body>
     </html>
+
   );
 }
