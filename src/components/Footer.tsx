@@ -4,8 +4,8 @@ import Image from 'next/image'
 import image from "../public/images/Logo.png"
 export default function Footer() {
   return (
-    <footer className="bg-transparent text-white py-8 pl-20">
-      <div className="container flex  md:flex-row justify-between items-center">
+    <footer className="bg-transparent grid place-items-center bottom-0 w-full text-white py-8 pl-20">
+      <div className="container flex w-full md:flex-row justify-between items-center">
         <div className="mb-6 md:mb-0 flex-1">
           <h3 className="text-lg font-bold mb-2">Team Talkeys</h3>
           <p className="text-sm">Address: Tikam University, Patalia, Punjab, India</p>
