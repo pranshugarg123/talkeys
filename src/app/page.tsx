@@ -1,4 +1,3 @@
-
 import EventCarousel from "@/components/eventCarousel";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -9,15 +8,13 @@ import HostSection from "@/components/hostSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  return (
-    <>
-    
-    <Hero />
-    <EventCarousel />
-    <CommunityCarousel />
-    <InfluencerCarousel />
-    <HostSection />
-    
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<EventCarousel />
+			<CommunityCarousel />
+			<InfluencerCarousel />
+			<HostSection />
+		</>
+	);
 }

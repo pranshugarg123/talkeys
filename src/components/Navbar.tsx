@@ -76,9 +76,9 @@ const Navbar = () => {
 							<Button
 								asChild
 								variant="outline"
-								className="text-white"
+								className="text-white hover:bg-white hover:text-black duration-300"
 							>
-								<Link href="/">Sign Up/Login</Link>
+								<Link href="/sign">Sign Up/Login</Link>
 							</Button>
 
 							{/* <Avatar>
