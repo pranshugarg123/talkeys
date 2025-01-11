@@ -7,8 +7,8 @@ const { validateEmail, validatePhoneNumber, } = require("../helpers/validatorHel
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
-const Event = require('../models/Event');
-const Pass = require('../models/Pass');
+const Event = require('../models/events.model.js');
+const Pass = require('../models/passes.model.js');
 const mongoose = require('mongoose');
 
 // Book ticket endpoint
