@@ -49,7 +49,7 @@ router.post('/book-ticket', auth, async (req, res) => {
         }
 
         // Check ticket availability
-        if (event.availableTickets <= 0 || !event.isBooking) {
+        if (event.totalSeats <= 0 || !event.isBooking) {
             await session.abortTransaction();
             return res.status(400).json({ error: "No tickets available for this event" });
         }
