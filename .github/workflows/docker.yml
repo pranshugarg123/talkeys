@@ -76,8 +76,8 @@ jobs:
           
           cd himanish-repo
           
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "ShreyasMahajann"
+          git config user.email "shreyas051005@gmail.com"
           
           git add .
           git commit -m "Replacing repository content with latest from TalkeysOfficial/talkeys" || echo "No changes to commit"
